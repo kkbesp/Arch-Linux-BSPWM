@@ -1,0 +1,31 @@
+* {
+  background-color: #0D0D0D;
+  text-color: #e8eaef;
+  selected: #5C5F9F;
+}
+
+mainbox {
+  background-color: #0D0D0D;
+  border: 0;
+  padding: 10px;
+}
+
+element {
+  padding: 0.3em;
+}
+
+element-icon {
+  size: 18;
+}
+
+element.selected {
+  background-color: @selected;
+}
+
+button {
+  padding: 0.1em;
+}
+
+button.selected {
+  background-color: @selected;
+}
