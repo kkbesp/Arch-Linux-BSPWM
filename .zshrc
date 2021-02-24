@@ -18,12 +18,6 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
-zinit light-mode for \
-    zinit-zsh/z-a-rust \
-    zinit-zsh/z-a-as-monitor \
-    zinit-zsh/z-a-patch-dl \
-    zinit-zsh/z-a-bin-gem-node
-
 zinit wait lucid for \
  atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" \
     zdharma/fast-syntax-highlighting \
@@ -58,8 +52,9 @@ alias q="exit"
 alias gi="git init"
 alias gs="git status"
 alias gl="git log --stat --pretty=oneline --graph --date=short"
-# alias gg="gitg &"
 alias ga="git add --all"
+alias ar="cd Documents/Arch-Linux-BSPWM/"
+alias vd="cd cd Documents/Void-Linux-BSPWM/"
 gac () {
   git add --all
   git commit -am "Update"
@@ -71,12 +66,10 @@ alias gpl="git pull"
 alias gp="git push"
 alias gpm="git push origin master"
 
-
 alias y="yay"
 alias ys="yay -S"
 alias yn="yay -S --noconfirm"
 alias yl="yay -S --noconfirm --needed - < ~/.pkglist.txt"
-alias ys="yay"
 alias ysn="yay --noconfirm"
 alias yo="yay -S --overwrite='*'"
 alias yU="yay -U"
@@ -92,7 +85,6 @@ alias yrsn="yay -Rsn"
 alias yrn="yay -R --noconfirm"
 alias ynskip='yay --noconfirm --mflags "--nocheck --skipchecksums --skippgpcheck"'
 alias yngpg='yay --noconfirm --gpgflags "--keyserver keys.gnupg.net"'
-
 
 # распаковать архив не указывая тип распаковщика
 function ex {

@@ -14,14 +14,6 @@ super + Return
 alt + d
   rofi -show drun
 
-# firefox
-alt + w
-  firefox
-
-# thunar
-alt + f
-  thunar
-
 # telegram
 alt + m
   telegram-desktop
@@ -29,9 +21,6 @@ alt + m
 # ranger
 alt + r
   urxvt -name Ranger -e ranger
-
-# alt + c
-#   rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 # polybar toggle
 super + ctrl + p
@@ -48,9 +37,6 @@ super + Print
 # flameshot delay 5s save PICTURES
 super + alt + Print
   flameshot full -c -d 5000 -p "$(xdg-user-dir PICTURES)"
-
-# alt + r
-  # $HOME/.config/bspwm/popup Ranger ranger
 
 # Balance desktop
 super + b
@@ -71,10 +57,6 @@ super + alt + {q,r}
 # close and kill
 super + q
   bspc node -{c,k}
-
-# hide current node, or restore a queried hidden node
-super + {_,shift} + minus
-  bspc node {,$(bspc query -N -d -n .hidden | head -n 1)} -g hidden
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}

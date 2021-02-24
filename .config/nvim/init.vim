@@ -16,8 +16,6 @@ set t_Co=256
 "Отключение звука
 set noerrorbells
 set novisualbell
-"Поддержка мыши
-set mouse=a
 "Поиск
 set ignorecase
 set smartcase

@@ -32,7 +32,7 @@
 	"pgpfetch": true,
 	"upgrademenu": true,
 	"cleanmenu": true,
-	"diffmenu": true,
+	"diffmenu": false,
 	"editmenu": false,
 	"combinedupgrade": false,
 	"useask": false
